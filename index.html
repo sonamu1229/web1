@@ -1,19 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WEB1-Welcome</title>
+        <title>Google</title>
         <meta charset="utf-8">
+        <style>
+            #outer-grid {
+                display: grid;
+                #upper-bar {
+                    padding-top:20px;
+                    padding-left:20px;
+                    padding-right:20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    #upper-right-bar {
+                        text-align: right;
+                        button {
+                            border:none;
+                            padding:6px;
+                            padding-left:10px; padding-right:10px;
+                            background-color: blue;
+                            color:white;
+                            border-radius:30%;
+                        }
+                        padding-bottom: auto;
+                    }
+                    grid-template-columns: 1fr 1fr;
+                    a {
+                        text-decoration: none;
+                        color :black;
+                    }
+                    a:hover {
+                        text-decoration:underline;
+                    }
+                }
+                grid-template-rows: 2fr 1fr;
+                #search-zone {
+                    img {
+                        display:block;
+                        margin-left:auto;
+                        margin-right:auto;
+                        height: 150px;
+                    }
+                    #input-wrapper {
+                        position:relative;
+                        display:inline-block;
+                        width:100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    #input-wrapper input {
+                        width:60%;
+                        margin-left:20%;
+                        margin-right:20%;
+                        box-sizing: border-box;
+                        padding-left:5%
+                    }
+                    .icon {
+                        position:absolute;
+                        pointer-events: none;
+                        width: 16px;
+                        height: 16px;
+                        top:50%;
+                        transform: translateY(-50%);
+                    }
+                    .search {
+                        left:22%;
+                    }
+                    .keyboard{
+                        right:26%;
+                    }
+                    .mic{
+                        right:24%;
+                    }
+                    .camera{
+                        right:22%;
+                    }
+                    input{
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 500px;
+                        height: 50px;
+                        border-radius: 30px;
+                        border : rgb(197, 192, 192) solid 1px;
+                        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                    }
+                }
+            }
+        </style>
     </head>
     <body>
-        <h1><a href = "web.html" target="_self">WEB</a></h1>
+        <div id="outer-grid">
+            <div id="upper-bar">
+                <div id="upper-left-bar">
+                    <a href="https://about.google/
+                    ?fg=1&utm_source=google-KR&utm_medium
+                    =referral&utm_campaign=hp-header">Google 정보</a>
+                    <a href = "https://store.google.com/regionpicker?hl=en-US">
+                        스토어</a>
+                </div>
+                <div id="upper-right-bar">
+                    <a href = "https://mail.google.com/mail/&ogbl">Gmail</a>
+                    <a href="https://www.google.com/imghp?hl=ko&ogbl">이미지</a>
+                    <img src="메뉴.jpeg">
+                    <button>로그인</button>
+                </div>
+            </div>
+            <div id="search-zone">
+                <img src="google로고.jpeg">
+                <div id="input-wrapper">
+                    <input type="text">
+                    <img class="icon mic" src="마이크.jpeg">
+                    <img class="icon camera" src="카메라.jpeg">
+                    <img class="icon search" src="스크린샷_30-7-2025_14583_www.google.com.jpeg">
+                    <img class="icon keyboard" src="키보드.jpeg">
+                </div>
+            </div>
 
-        <ol>
-            <li><a href="1.html" target="_self">HTML</a></li>
-            <li><a href="2.html" target="_self">CSS</a></li>
-            <li><a href = "3.html" target="_self">JavaScript</a></li>
-        </ol>
-
-        <h2>WEB</h2>
-        <p>The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The Web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.</p>
+        </div>
     </body>
 </html>
